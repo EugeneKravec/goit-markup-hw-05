@@ -53,20 +53,20 @@
     </header>
 
     <main>
-        <!--------------------- Герой --------------------------------->
+        <!-- Герой -->
         <hr class="hero-line">
         <section class="hero">
             <div class="container overlay">
                 <h1 class="hero-text">Эффективные решения <br>
                     для вашего бизнеса
                 </h1>
-                <button class="button main-button">
+                <button data-modal-open class="button main-button">
                     Заказать услугу
                 </button>
             </div>
         </section>
 
-        <!--------------------- Компетенции --------------------------->
+        <!-- Компетенции -->
         <section class="competence">
             <h2 class="visually-hidden"></h2>
 
@@ -405,5 +405,16 @@
             </div>
         </div>
     </footer>
+    <!-- Модальное окно -->
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close>
+                <svg>
+                    <use href="./images/close_button.svg"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
