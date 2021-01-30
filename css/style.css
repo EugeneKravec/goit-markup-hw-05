@@ -160,6 +160,24 @@ footer {
     background-color: var(--primary-background-color);
 }
 
+.disctiption {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    padding: 27px 0;
+    bottom: 0;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--secondary-title-color);
+    background: rgba(47, 48, 58, 0.8);
+}
+
 .our-team {
     padding: 94px 0;
 
@@ -212,6 +230,7 @@ footer {
 }
 
 .images-item {
+    position: relative;
     width: calc((100%-60px) / 3);
     margin-right: 30px;
 } 
@@ -447,10 +466,6 @@ img {
     list-style: none;
 }
 
-.link {
-    text-decoration: none;
-}
-
 .contact-list {
     display: flex;  
     justify-content: flex-end;
@@ -462,7 +477,15 @@ img {
 }
 
 .header-link {
+    display: block;
     margin-left: 50px;
+    padding: 32px 0;
+    text-decoration: none;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     color: var(--primary-title-color);
 }
 
@@ -470,6 +493,7 @@ img {
     display: flex;
     align-items: center;
     margin-left: 50px;
+    text-decoration: none;
 
     font-weight: 500;
     font-size: 14px;
@@ -517,6 +541,7 @@ img {
     display: flex;
     flex-direction: column;
     margin-bottom: 9px;
+    text-decoration: none;
 
     font-weight: 400;
     font-size: 14px;
