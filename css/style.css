@@ -479,7 +479,7 @@ img {
     margin-left: auto;
 }
 
-.active-page {
+.header-link.active-page {
     display: block;
     position: relative;
     margin-left: 50px;
@@ -489,14 +489,14 @@ img {
     color: var(--accent-color);
 }
 
-.active-page::after {
+.header-link.active-page::after {
     display: block;
     position: absolute;
     content: "";
     width: 100%;
     height: 4px;
     margin-top: 28px;
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     border-radius: 2px;
 }
 
@@ -883,7 +883,7 @@ address {
 .project-item .link:focus .overlay {
     opacity: 1;
     transform: translateY(0);
-    
+
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
